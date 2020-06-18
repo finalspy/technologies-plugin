@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies
+package net.ypetit.technologies
 
 import org.gradle.api.Project
 import java.io.File

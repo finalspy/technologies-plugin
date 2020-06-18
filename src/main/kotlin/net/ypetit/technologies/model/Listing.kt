@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies.model
+package net.ypetit.technologies.model
 
 data class Listing(
     val technoId: String,
@@ -34,8 +34,8 @@ data class ContextListing(
 }
 
 fun ContextMetadataWithId.toContextListing() = ContextListing(
-    id = this.id ?: "",
-    docker = this.dockerInfo.toOneLine()
+        id = this.id ?: "",
+        docker = this.dockerInfo.toOneLine()
 )
 
 fun DockerInfo?.toOneLine() = when {
@@ -50,7 +50,7 @@ fun SimpleMetadataWithContexts.toDocker(): String? =
     }
 
 fun SimpleMetadataWithContexts.toListing() = Listing(
-    technoId = this.id,
-    technoType = this.type,
-    docker = this.toDocker(),
-    contexts = this.contexts?.map { it.toContextListing() })
+        technoId = this.id,
+        technoType = this.type,
+        docker = this.toDocker(),
+        contexts = this.contexts?.map { it.toContextListing() })

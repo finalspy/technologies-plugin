@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies.model
+package net.ypetit.technologies.model
 
 data class ContextMetadata(
     val dockerInfo: DockerInfo?
@@ -37,10 +37,10 @@ data class ContextsMetadata(
 }
 
 data class SimpleMetadataWithContexts(
-    val id: String,
-    val type: String,
-    val dockerInfo: DockerInfo?,
-    val contexts: List<ContextMetadataWithId>?
+        val id: String,
+        val type: String,
+        val dockerInfo: DockerInfo?,
+        val contexts: List<ContextMetadataWithId>?
 ) {
     constructor() : this("", "", null, null)
 }

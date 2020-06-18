@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies.model
+package net.ypetit.technologies.model
 
 data class DockerInfo(
     val image: String,

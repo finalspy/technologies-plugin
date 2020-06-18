@@ -15,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies
+package net.ypetit.technologies
 
-import com.saagie.technologies.model.DockerInfo
+import net.ypetit.technologies.model.DockerInfo
 import org.gradle.testfixtures.ProjectBuilder
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue

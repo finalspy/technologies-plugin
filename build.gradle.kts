@@ -28,19 +28,19 @@ plugins {
     kotlin("jvm") version "1.3.70"
 }
 
-version = "1.2.2"
-group = "com.saagie"
+version = "0.0.1"
+group = "net.ypetit"
 
 config {
     info {
         name = "Technologies"
-        description = "Saagie gradle plugin for technologies"
-        inceptionYear = "2019"
-        vendor = "Saagie"
+        description = "Debug of Saagie gradle plugin for technologies"
+        inceptionYear = "2020"
+        vendor = "Ypetit"
 
         links {
-            website = "https://www.saagie.com"
-            scm = "https://github.com/saagie/technologies-plugin"
+            website = "https://www.ypetit.net"
+            scm = "https://github.com/finalspy/technologies-plugin"
         }
 
         licensing {
@@ -52,8 +52,8 @@ config {
         }
 
         organization {
-            name = "Saagie"
-            url = "http://www.saagie.com"
+            name = "Ypetit"
+            url = "http://www.ypetit.net"
         }
 
         people {
@@ -90,8 +90,8 @@ object VersionInfo {
 }
 
 val versions: VersionInfo by extra { VersionInfo }
-val github = "https://github.com/saagie/technologies-plugin"
-val packageName = "com.saagie.technologies"
+val github = "https://github.com/finalspy/technologies-plugin"
+val packageName = "net.ypetit.technologies"
 
 repositories {
     jcenter()
@@ -153,7 +153,7 @@ gradlePlugin {
 pluginBundle {
     website = github
     vcsUrl = github
-    tags = listOf("saagie", "technologies")
+    tags = listOf("ypetit", "technologies")
     mavenCoordinates {
         groupId = project.group.toString()
         artifactId = project.name

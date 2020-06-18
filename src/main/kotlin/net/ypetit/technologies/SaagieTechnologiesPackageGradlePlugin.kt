@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.saagie.technologies
+package net.ypetit.technologies
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.core.JsonFactory
@@ -30,10 +30,10 @@ import com.github.dockerjava.core.DockerClientBuilder
 import com.github.dockerjava.core.command.PullImageResultCallback
 import com.github.dockerjava.core.command.PushImageResultCallback
 import com.github.kittinunf.fuel.Fuel
-import com.saagie.technologies.model.ContextsMetadata
-import com.saagie.technologies.model.DockerInfo
-import com.saagie.technologies.model.SimpleMetadataWithContexts
-import com.saagie.technologies.model.toListing
+import net.ypetit.technologies.model.ContextsMetadata
+import net.ypetit.technologies.model.DockerInfo
+import net.ypetit.technologies.model.SimpleMetadataWithContexts
+import net.ypetit.technologies.model.toListing
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.Task
